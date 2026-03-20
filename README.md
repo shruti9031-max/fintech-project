@@ -6,4 +6,4 @@ Additionally, a basic payment gateway interface is implemented to demonstrate ho
 
 The project focuses on improving financial discipline, promoting smart money management, and providing a beginner-friendly FinTech solution. It also demonstrates the practical implementation of front-end web development concepts such as DOM manipulation, event handling, and dynamic data updates.
 
-🧠
+
