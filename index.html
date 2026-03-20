@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smartpay - Premium Fintech App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="blob-wrap">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <div class="logo">Smartpay</div>
+    <button class="mobile-close" id="mobileClose">&#x2715;</button>
+  </div>
+  <ul class="mobile-nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="btn-main mobile-cta" id="mobileGetStarted">Get Started Free</button>
+</div>
+
+<nav class="nav" id="navbar">
+  <div class="logo">Smartpay</div>
+  <ul class="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="btn-nav-login" id="navLoginBtn">Log In</button>
+    <button class="nav-cta" id="navGetStarted">Get Started</button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="hero fade-up" id="hero">
+  <div class="hero-left">
+    <div class="hero-pill">
+      <div class="hero-pill-dot"></div>
+      #1 Trusted Fintech App of 2026
+    </div>
+    <h1>Finance that<br>feels <em>effortless</em><br>&amp; safe</h1>
+    <p class="hero-sub">Smartpay is the all-in-one finance app — send money, pay bills, manage cards, and track spending from one beautifully designed platform trusted by millions worldwide.</p>
+    <div class="hero-btns">
+      <button class="btn-main" id="heroGetStarted">Get Started Free</button>
+      <button class="btn-ghost" id="heroWatchDemo">
+        <div class="play-icon">
+          <svg width="10" height="12" viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12" fill="#fff"></polygon></svg>
+        </div>
+        Watch Demo
+      </button>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-avatars">
+        <div class="avatar" style="background:#f6d860;">A</div>
+        <div class="avatar" style="background:#60c8f6;">B</div>
+        <div class="avatar" style="background:#f67560;">C</div>
+        <div class="avatar" style="background:#a060f6;">D</div>
+      </div>
+      <span class="trust-text">Trusted by <strong>2M+</strong> users globally</span>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hcard hcard-main">
+      <div class="balance-label">Total Balance</div>
+      <div class="balance-amount"><sup>$</sup>10,250.00</div>
+      <div class="card-row">
+        <div class="mini-stat"><div class="mini-stat-num">+12.4%</div><div class="mini-stat-lbl">This Month</div></div>
+        <div class="mini-stat"><div class="mini-stat-num">48</div><div class="mini-stat-lbl">Transactions</div></div>
+      </div>
+    </div>
+    <div class="hcard hcard-mini">
+      <div class="balance-label" style="margin-bottom:12px;">Recent</div>
+      <div class="txn-row">
+        <div class="txn-icon" style="background:#fff3e6;">&#x2615;</div>
+        <div><div class="txn-name">Starbucks</div><div class="txn-sub">Today</div></div>
+        <div class="txn-amt neg">-$5.40</div>
+      </div>
+      <div class="txn-row">
+        <div class="txn-icon" style="background:#e6f9f0;">&#x1F4BC;</div>
+        <div><div class="txn-name">Salary</div><div class="txn-sub">Yesterday</div></div>
+        <div class="txn-amt pos">+$3,200</div>
+      </div>
+    </div>
+    <div class="hcard hcard-tiny">
+      <div class="qr-label">Scan to Pay</div>
+      <div class="qr-box">
+        <svg width="54" height="54" viewBox="0 0 54 54" fill="none">
+          <rect x="2" y="2" width="20" height="20" rx="3" stroke="#00e896" stroke-width="2.5"></rect>
+          <rect x="8" y="8" width="8" height="8" fill="#00e896" rx="1"></rect>
+          <rect x="32" y="2" width="20" height="20" rx="3" stroke="#00e896" stroke-width="2.5"></rect>
+          <rect x="38" y="8" width="8" height="8" fill="#00e896" rx="1"></rect>
+          <rect x="2" y="32" width="20" height="20" rx="3" stroke="#00e896" stroke-width="2.5"></rect>
+          <rect x="8" y="38" width="8" height="8" fill="#00e896" rx="1"></rect>
+          <rect x="32" y="32" width="5" height="5" fill="#00e896" rx="1"></rect>
+          <rect x="40" y="32" width="5" height="5" fill="#00e896" rx="1"></rect>
+          <rect x="32" y="40" width="5" height="5" fill="#00e896" rx="1"></rect>
+          <rect x="40" y="40" width="5" height="5" fill="#00e896" rx="1"></rect>
+          <rect x="48" y="32" width="4" height="4" fill="#00e896" rx="1"></rect>
+          <rect x="48" y="48" width="4" height="4" fill="#00e896" rx="1"></rect>
+        </svg>
+      </div>
+      <div class="qr-name">Anabella Angela</div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-strip fade-up">
+  <div class="stat-item"><div class="stat-n">2M+</div><div class="stat-l">Active Users</div></div>
+  <div class="stat-item"><div class="stat-n">$10B+</div><div class="stat-l">Transactions</div></div>
+  <div class="stat-item"><div class="stat-n">150+</div><div class="stat-l">Countries</div></div>
+  <div class="stat-item"><div class="stat-n">4.9&#x2605;</div><div class="stat-l">App Rating</div></div>
+</div>
+
+<section class="features-sec fade-up" id="features">
+  <div class="feat-inner">
+    <div class="section-center">
+      <div class="section-eyebrow">Core Features</div>
+      <div class="section-h">Everything you need to <em>grow financially</em></div>
+      <div class="section-sub">Three powerful pillars that make Smartpay the most complete finance platform available.</div>
+    </div>
+    <div class="main-feat-grid">
+
+      <div class="main-feat-card fade-up">
+        <div class="mfc-left">
+          <div class="mfc-number">01</div>
+          <div class="mfc-icon-wrap" style="background:linear-gradient(135deg,#00c882,#007a4d);">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M4 10h24M4 16h8M8 22h6" stroke="#fff" stroke-width="2.2" stroke-linecap="round"></path>
+              <rect x="3" y="6" width="26" height="20" rx="4" stroke="#fff" stroke-width="2.2"></rect>
+              <circle cx="22" cy="21" r="5" fill="rgba(255,255,255,0.2)" stroke="#fff" stroke-width="1.8"></circle>
+              <path d="M20 21l1.5 1.5L24 19" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <div class="mfc-content">
+            <div class="mfc-tag" style="background:rgba(0,200,130,0.1);color:#007a4d;">&#x1F4B8; Payment Gateway</div>
+            <h3 class="mfc-title">Secure &amp; Instant Payments</h3>
+            <p class="mfc-desc">Users can send and receive money securely with our integrated payment system. Every transaction is protected end-to-end with military-grade encryption.</p>
+            <ul class="mfc-bullets">
+              <li><span class="bullet-dot" style="background:#00c882;"></span>Secure transactions with 256-bit SSL</li>
+              <li><span class="bullet-dot" style="background:#00c882;"></span>Fast payments — settle in under 3 seconds</li>
+              <li><span class="bullet-dot" style="background:#00c882;"></span>150+ supported currencies worldwide</li>
+              <li><span class="bullet-dot" style="background:#00c882;"></span>Zero hidden fees on transfers</li>
+            </ul>
+            <div class="mfc-chips">
+              <span class="mfc-chip">&#x26A1; Instant</span>
+              <span class="mfc-chip">&#x1F512; Encrypted</span>
+              <span class="mfc-chip">&#x1F30D; Global</span>
+            </div>
+          </div>
+        </div>
+        <div class="mfc-right">
+          <div class="mfc-visual">
+            <div class="pay-card">
+              <div class="pay-card-top">
+                <div class="pay-avatar" style="background:linear-gradient(135deg,#00c882,#007a4d);">SA</div>
+                <div>
+                  <div class="pay-name">Send to Sarah</div>
+                  <div class="pay-status">sarah@gmail.com</div>
+                </div>
+              </div>
+              <div class="pay-amount-row">
+                <div class="pay-amount">$250.00</div>
+                <div class="pay-badge">&#x2713; Secure</div>
+              </div>
+              <div class="pay-bar"><div class="pay-bar-fill"></div></div>
+              <div class="pay-foot">
+                <span>Processing...</span>
+                <span class="pay-speed">~2 sec</span>
+              </div>
+              <button class="pay-btn">Send Money</button>
+            </div>
+            <div class="pay-notif">
+              <span>&#x2705;</span>
+              <div>
+                <div class="notif-title">Payment Sent!</div>
+                <div class="notif-sub">$250 to Sarah · Just now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-feat-card main-feat-card-alt fade-up">
+        <div class="mfc-right mfc-right-alt">
+          <div class="mfc-visual">
+            <div class="budget-card">
+              <div class="budget-title">Monthly Budget</div>
+              <div class="budget-total">
+                <span class="budget-spent">$1,840</span>
+                <span class="budget-of">/ $3,000</span>
+              </div>
+              <div class="budget-ring-wrap">
+                <svg width="110" height="110" viewBox="0 0 110 110">
+                  <circle cx="55" cy="55" r="44" fill="none" stroke="#f0f4f8" stroke-width="10"></circle>
+                  <circle cx="55" cy="55" r="44" fill="none" stroke="url(#ringGrad)" stroke-width="10" stroke-dasharray="276.5" stroke-dashoffset="90" stroke-linecap="round" transform="rotate(-90 55 55)"></circle>
+                  <defs>
+                    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#00c882"></stop>
+                      <stop offset="100%" stop-color="#007a4d"></stop>
+                    </linearGradient>
+                  </defs>
+                  <text x="55" y="51" text-anchor="middle" font-size="14" font-weight="800" fill="#0b1c35">61%</text>
+                  <text x="55" y="65" text-anchor="middle" font-size="9" fill="#6b7f96">Used</text>
+                </svg>
+              </div>
+              <div class="budget-cats">
+                <div class="bcat"><span class="bcat-dot" style="background:#00c882;"></span><span class="bcat-name">Food</span><span class="bcat-val">$720</span></div>
+                <div class="bcat"><span class="bcat-dot" style="background:#7c60f6;"></span><span class="bcat-name">Travel</span><span class="bcat-val">$450</span></div>
+                <div class="bcat"><span class="bcat-dot" style="background:#f67560;"></span><span class="bcat-name">Bills</span><span class="bcat-val">$670</span></div>
+              </div>
+              <div class="budget-insight">&#x1F4A1; You're on track to save $280 this month!</div>
+            </div>
+          </div>
+        </div>
+        <div class="mfc-left">
+          <div class="mfc-number">02</div>
+          <div class="mfc-icon-wrap" style="background:linear-gradient(135deg,#7c60f6,#5a3fc0);">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M4 24l7-7 5 4 7-9 5 3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M4 4v24h24" stroke="#fff" stroke-width="2.2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <div class="mfc-content">
+            <div class="mfc-tag" style="background:rgba(124,96,246,0.1);color:#5a3fc0;">&#x1F4CA; Budget Tracking</div>
+            <h3 class="mfc-title">Smart Expense Insights</h3>
+            <p class="mfc-desc">The platform automatically tracks expenses and provides insights to help users manage their budget better. Know exactly where every dollar goes.</p>
+            <ul class="mfc-bullets">
+              <li><span class="bullet-dot" style="background:#7c60f6;"></span>Automatic expense categorization</li>
+              <li><span class="bullet-dot" style="background:#7c60f6;"></span>Real-time spending insights &amp; alerts</li>
+              <li><span class="bullet-dot" style="background:#7c60f6;"></span>Monthly &amp; weekly budget goals</li>
+              <li><span class="bullet-dot" style="background:#7c60f6;"></span>AI-powered saving recommendations</li>
+            </ul>
+            <div class="mfc-chips">
+              <span class="mfc-chip chip-purple">&#x1F4C8; Insights</span>
+              <span class="mfc-chip chip-purple">&#x1F916; AI-Powered</span>
+              <span class="mfc-chip chip-purple">&#x1F3AF; Goals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-feat-card fade-up">
+        <div class="mfc-left">
+          <div class="mfc-number">03</div>
+          <div class="mfc-icon-wrap" style="background:linear-gradient(135deg,#f6a020,#e07010);">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M6 22l5-6 4 3 5-7 6 5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <circle cx="24" cy="10" r="5" fill="rgba(255,255,255,0.25)" stroke="#fff" stroke-width="1.8"></circle>
+              <path d="M22 10l1.5 1.5L26 8" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <div class="mfc-content">
+            <div class="mfc-tag" style="background:rgba(246,160,32,0.12);color:#b06000;">&#x1F4C8; Micro-Investing</div>
+            <h3 class="mfc-title">Invest from Just $1</h3>
+            <p class="mfc-desc">Users can start investing with small amounts, making investing accessible for everyone. No experience needed — Smartpay guides you every step of the way.</p>
+            <ul class="mfc-bullets">
+              <li><span class="bullet-dot" style="background:#f6a020;"></span>Start with as little as $1</li>
+              <li><span class="bullet-dot" style="background:#f6a020;"></span>Beginner-friendly guided investing</li>
+              <li><span class="bullet-dot" style="background:#f6a020;"></span>Diversified portfolios &amp; ETFs</li>
+              <li><span class="bullet-dot" style="background:#f6a020;"></span>Auto-invest with round-ups</li>
+            </ul>
+            <div class="mfc-chips">
+              <span class="mfc-chip chip-amber">&#x1F4B0; From $1</span>
+              <span class="mfc-chip chip-amber">&#x1F7E2; Beginner</span>
+              <span class="mfc-chip chip-amber">&#x1F4CA; ETFs</span>
+            </div>
+          </div>
+        </div>
+        <div class="mfc-right mfc-right-amber">
+          <div class="mfc-visual">
+            <div class="invest-card">
+              <div class="invest-label">My Portfolio</div>
+              <div class="invest-total">$1,284.50</div>
+              <div class="invest-gain">&#x25B2; +$84.50 (+7.05%) this month</div>
+              <div class="invest-chart">
+                <svg width="100%" height="70" viewBox="0 0 220 70" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#f6a020" stop-opacity="0.3"></stop>
+                      <stop offset="100%" stop-color="#f6a020" stop-opacity="0"></stop>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0 55 C30 50 50 45 70 40 C90 35 100 20 130 15 C155 10 175 18 200 12 L220 8 L220 70 L0 70 Z" fill="url(#chartGrad)"></path>
+                  <path d="M0 55 C30 50 50 45 70 40 C90 35 100 20 130 15 C155 10 175 18 200 12 L220 8" fill="none" stroke="#f6a020" stroke-width="2.5" stroke-linecap="round"></path>
+                  <circle cx="220" cy="8" r="4" fill="#f6a020"></circle>
+                </svg>
+              </div>
+              <div class="invest-holdings">
+                <div class="holding"><span class="holding-name">&#x1F3E2; S&amp;P 500 ETF</span><span class="holding-val green">+12.4%</span></div>
+                <div class="holding"><span class="holding-name">&#x1F4BB; Tech Fund</span><span class="holding-val green">+8.1%</span></div>
+                <div class="holding"><span class="holding-name">&#x1F30D; Global Mix</span><span class="holding-val amber">+3.2%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="about-sec fade-up" id="about">
+  <div class="about-inner">
+    <div class="about-left">
+      <div class="section-eyebrow">About Smartpay</div>
+      <div class="section-h left-h">Built for the <em>future</em> of money</div>
+      <p class="about-desc">Smartpay was founded in 2021 with a simple mission — make financial services accessible, fast, and secure for everyone. We believe managing money should feel empowering, not overwhelming.</p>
+      <p class="about-desc top-gap">From first-time savers to seasoned investors, Smartpay adapts to your financial life with intelligent automation, beautiful design, and human-first support available 24/7.</p>
+      <div class="about-badges">
+        <div class="about-badge"><div class="about-badge-icon">&#x1F3C6;</div><div><div class="about-badge-title">Best Fintech App 2025</div><div class="about-badge-sub">TechCrunch Awards</div></div></div>
+        <div class="about-badge"><div class="about-badge-icon">&#x1F510;</div><div><div class="about-badge-title">ISO 27001 Certified</div><div class="about-badge-sub">Security &amp; Compliance</div></div></div>
+        <div class="about-badge"><div class="about-badge-icon">&#x1F30D;</div><div><div class="about-badge-title">150+ Countries</div><div class="about-badge-sub">Global Coverage</div></div></div>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="about-visual">
+        <div class="av-card av-card-1">
+          <div class="av-top"><span class="av-dot"></span><span class="av-label-text">Monthly Spending</span></div>
+          <div class="av-bars">
+            <div class="av-bar-wrap"><div class="av-lbl">Food</div><div class="av-bar"><div class="av-fill" style="width:72%;"></div></div><div class="av-val">$720</div></div>
+            <div class="av-bar-wrap"><div class="av-lbl">Travel</div><div class="av-bar"><div class="av-fill" style="width:45%;background:linear-gradient(90deg,#7c60f6,#a08af0);"></div></div><div class="av-val">$450</div></div>
+            <div class="av-bar-wrap"><div class="av-lbl">Bills</div><div class="av-bar"><div class="av-fill" style="width:60%;background:linear-gradient(90deg,#f67560,#f09080);"></div></div><div class="av-val">$600</div></div>
+            <div class="av-bar-wrap"><div class="av-lbl">Shopping</div><div class="av-bar"><div class="av-fill" style="width:35%;background:linear-gradient(90deg,#60c8f6,#90d8f8);"></div></div><div class="av-val">$350</div></div>
+          </div>
+        </div>
+        <div class="av-card av-card-2">
+          <div class="av-savings-label">Savings Goal</div>
+          <div class="av-savings-amount">$4,200 <span class="av-savings-of">/ $6,000</span></div>
+          <div class="savings-bar"><div class="savings-fill"></div></div>
+          <div class="av-savings-pct">70% reached &#x1F3AF;</div>
+        </div>
+        <div class="av-card av-card-3">
+          <div class="av-lock">&#x1F512;</div>
+          <div class="av-card3-title">Face ID Active</div>
+          <div class="av-card3-sub">Your account is protected</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="card-visual-sec fade-up">
+  <div class="section-eyebrow">Your Card</div>
+  <div class="section-h">Create your <em>Smartpay Card</em></div>
+  <div class="section-sub">Virtual or physical — get yours in minutes, completely free</div>
+  <div class="debit-wrap">
+    <div class="debit" id="debitCard">
+      <div class="debit-orb1"></div>
+      <div class="debit-orb2"></div>
+      <div class="debit-inner">
+        <div class="debit-top">
+          <div class="debit-brand">Smart<span>pay</span></div>
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path d="M13 4C8.5 4 5 8 5 13s3.5 9 8 9" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" fill="none"></path>
+            <path d="M13 4C17.5 4 21 8 21 13s-3.5 9-8 9" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" fill="none"></path>
+            <circle cx="13" cy="13" r="3" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"></circle>
+          </svg>
+        </div>
+        <div class="debit-chip"></div>
+        <div class="debit-num">&#x2022;&#x2022;&#x2022;&#x2022; &#x2022;&#x2022;&#x2022;&#x2022; &#x2022;&#x2022;&#x2022;&#x2022; 4821</div>
+        <div class="debit-bot">
+          <div>
+            <div class="debit-name-lbl">Card Holder</div>
+            <div class="debit-name">Anabella Angela</div>
+          </div>
+          <div class="debit-mc">
+            <div class="debit-mc-c1"></div>
+            <div class="debit-mc-c2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="debit-shadow"></div>
+  </div>
+  <div class="card-btn-wrap"><button class="btn-main" id="getFreeCard">Get Free Card</button></div>
+</section>
+
+<section class="testimonials-sec fade-up" id="testimonials">
+  <div class="section-eyebrow">User Reviews</div>
+  <div class="section-h">People <em>love</em> Smartpay</div>
+  <div class="section-sub">Real stories from real users around the world.</div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+      <p class="testi-text">"Smartpay completely changed how I manage money. The instant transfers are lightning fast and the analytics helped me save an extra $400 last month. Absolutely love it!"</p>
+      <div class="testi-author"><div class="testi-avatar" style="background:linear-gradient(135deg,#00c882,#007a4d);">JS</div><div><div class="testi-name">James Sullivan</div><div class="testi-role">Freelance Designer · New York, USA</div></div></div>
+    </div>
+    <div class="testi-card testi-card-featured">
+      <div class="testi-badge">Top Review</div>
+      <div class="testi-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+      <p class="testi-text">"I've tried every banking app out there — Smartpay is on a completely different level. The security is rock solid, the UI is gorgeous, and sending money internationally is finally painless. 10/10."</p>
+      <div class="testi-author"><div class="testi-avatar" style="background:linear-gradient(135deg,#7c60f6,#5a3fc0);">PR</div><div><div class="testi-name">Priya Ramesh</div><div class="testi-role">Software Engineer · Bangalore, India</div></div></div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+      <p class="testi-text">"As a small business owner, Smartpay saves me hours every week. QR payments, real-time alerts, and the spending breakdown are exactly what I needed."</p>
+      <div class="testi-author"><div class="testi-avatar" style="background:linear-gradient(135deg,#f67560,#c04030);">MA</div><div><div class="testi-name">Maria Alvarez</div><div class="testi-role">Business Owner · Madrid, Spain</div></div></div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2606;</div>
+      <p class="testi-text">"The Face ID setup was seamless and I feel genuinely safe using Smartpay. Transfers hit instantly. The app design is clean and intuitive. Highly recommend."</p>
+      <div class="testi-author"><div class="testi-avatar" style="background:linear-gradient(135deg,#60c8f6,#1890c0);">LK</div><div><div class="testi-name">Lena Kim</div><div class="testi-role">Student · Seoul, South Korea</div></div></div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+      <p class="testi-text">"I use Smartpay for all my international payments and the zero-fee card is a game changer for travel. Saved over $200 in foreign transaction fees on my last trip alone!"</p>
+      <div class="testi-author"><div class="testi-avatar" style="background:linear-gradient(135deg,#f6d860,#c0a020);">OA</div><div><div class="testi-name">Omar Akhtar</div><div class="testi-role">Travel Blogger · Dubai, UAE</div></div></div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+      <p class="testi-text">"The savings goal feature is incredible — it automatically sets money aside for me. I hit my emergency fund target in 4 months. Smartpay genuinely feels like having a personal financial advisor."</p>
+      <div class="testi-author"><div class="testi-avatar" style="background:linear-gradient(135deg,#a0f080,#40a010);">SN</div><div><div class="testi-name">Sophie Nguyen</div><div class="testi-role">Nurse · Toronto, Canada</div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-sec fade-up">
+  <div class="cta-orb"></div>
+  <div class="cta-orb2"></div>
+  <h2>Start your <em>financial journey</em> today</h2>
+  <p>Join 2 million+ users who trust Smartpay for everyday banking</p>
+  <div class="cta-btns">
+    <button class="btn-cta-main" id="ctaCreate">Create Free Account</button>
+    <button class="btn-cta-ghost" id="ctaLearn">Learn More</button>
+  </div>
+</div>
+
+<footer class="footer" id="contact">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">Smartpay</div>
+      <p class="footer-tagline">Making finance effortless for everyone, everywhere.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" aria-label="Twitter">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-links-group">
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Changelog</a></li>
+          <li><a href="#">Download App</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press Kit</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Status Page</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="footer-contact-list">
+          <li><span class="contact-icon">&#x2709;</span><a href="mailto:support@smartpay.io">support@smartpay.io</a></li>
+          <li><span class="contact-icon">&#x1F4DE;</span><a href="tel:+18005678901">+1 800 567 8901</a></li>
+          <li><span class="contact-icon">&#x1F4CD;</span><span>101 Finance Ave, San Francisco, CA 94105</span></li>
+          <li><span class="contact-icon">&#x1F550;</span><span>Support: 24/7 Live Chat</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">&#169; 2026 Smartpay Inc. All rights reserved.</div>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Cookies</a>
+    </div>
+    <div class="footer-store-badges">
+      <div class="store-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"></path></svg>
+        App Store
+      </div>
+      <div class="store-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.22.99.14l.11-.06 11.05-11.05-2.3-2.3L3.18 23.76zM20.49 10.63l-2.78-1.6-2.55 2.55 2.55 2.56 2.8-1.62c.8-.46.8-1.43-.02-1.89zM2.1.29C1.82.5 1.64.86 1.64 1.33v21.32c0 .47.18.83.46 1.04l.06.04 11.94-11.94v-.28L2.1.29zM14.57 9.45l-3.13-3.13L3.18.26c-.35-.2-.7-.22-1-.06l10.85 10.86 1.54-1.61z"></path></svg>
+        Google Play
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay"></div>
+<div class="modal" id="accountModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <button class="modal-close" id="modalClose" aria-label="Close">&#x2715;</button>
+  <div class="modal-step" id="step1">
+    <div class="modal-logo">Smartpay</div>
+    <h2 class="modal-title" id="modalTitle">Create your account</h2>
+    <p class="modal-sub">Join 2M+ users — it's free forever</p>
+    <div class="modal-form">
+      <div class="form-row two-col">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" placeholder="John" autocomplete="given-name">
+          <span class="field-error" id="firstNameErr"></span>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" placeholder="Doe" autocomplete="family-name">
+          <span class="field-error" id="lastNameErr"></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="regEmail">Email Address</label>
+        <input type="email" id="regEmail" placeholder="john@example.com" autocomplete="email">
+        <span class="field-error" id="regEmailErr"></span>
+      </div>
+      <div class="form-group">
+        <label for="regPhone">Phone Number</label>
+        <input type="tel" id="regPhone" placeholder="+1 800 567 8901" autocomplete="tel">
+        <span class="field-error" id="regPhoneErr"></span>
+      </div>
+      <div class="form-group">
+        <label for="regPassword">Password</label>
+        <div class="input-wrap">
+          <input type="password" id="regPassword" placeholder="Min. 8 characters" autocomplete="new-password">
+          <button class="toggle-pw" data-target="regPassword" aria-label="Toggle password" type="button">&#x1F441;</button>
+        </div>
+        <div class="pw-strength"><div class="pw-bar" id="pwBar"></div></div>
+        <span class="pw-label" id="pwLabel"></span>
+        <span class="field-error" id="regPasswordErr"></span>
+      </div>
+      <div class="form-group">
+        <label for="regConfirm">Confirm Password</label>
+        <div class="input-wrap">
+          <input type="password" id="regConfirm" placeholder="Repeat password" autocomplete="new-password">
+          <button class="toggle-pw" data-target="regConfirm" aria-label="Toggle password" type="button">&#x1F441;</button>
+        </div>
+        <span class="field-error" id="regConfirmErr"></span>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="agreeTerms">
+        <label for="agreeTerms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+      </div>
+      <span class="field-error" id="agreeErr"></span>
+      <button class="btn-main btn-full" id="registerBtn" type="button">Create Free Account</button>
+      <p class="modal-switch">Already have an account? <button class="link-btn" id="goLogin" type="button">Log In</button></p>
+    </div>
+  </div>
+  <div class="modal-step hidden" id="step2">
+    <div class="modal-logo">Smartpay</div>
+    <div class="otp-icon">&#x1F4E7;</div>
+    <h2 class="modal-title">Verify your email</h2>
+    <p class="modal-sub">We sent a 6-digit code to <strong id="otpEmail"></strong></p>
+    <div class="otp-boxes" id="otpBoxes">
+      <input class="otp-box" maxlength="1" type="text" inputmode="numeric" pattern="[0-9]*">
+      <input class="otp-box" maxlength="1" type="text" inputmode="numeric" pattern="[0-9]*">
+      <input class="otp-box" maxlength="1" type="text" inputmode="numeric" pattern="[0-9]*">
+      <input class="otp-box" maxlength="1" type="text" inputmode="numeric" pattern="[0-9]*">
+      <input class="otp-box" maxlength="1" type="text" inputmode="numeric" pattern="[0-9]*">
+      <input class="otp-box" maxlength="1" type="text" inputmode="numeric" pattern="[0-9]*">
+    </div>
+    <span class="field-error" id="otpErr" style="text-align:center;display:block;margin-bottom:12px;"></span>
+    <button class="btn-main btn-full" id="verifyOtpBtn" type="button">Verify Code</button>
+    <p class="modal-switch" style="margin-top:16px;">Didn't receive it? <button class="link-btn" id="resendOtp" type="button">Resend</button> <span id="resendTimer"></span></p>
+  </div>
+  <div class="modal-step hidden" id="step3">
+    <div class="success-animation">
+      <div class="success-circle">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="24" fill="#00c882"></circle>
+          <path d="M14 24l8 8 14-14" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </div>
+    </div>
+    <h2 class="modal-title" style="margin-top:20px;">Welcome to Smartpay! &#x1F389;</h2>
+    <p class="modal-sub">Your account has been created successfully. You're all set to manage your finances smarter.</p>
+    <div class="success-details" id="successDetails"></div>
+    <button class="btn-main btn-full" id="goToDashboard" type="button">Go to Dashboard</button>
+    <button class="btn-ghost btn-full" style="margin-top:12px;" id="closeSuccess" type="button">Back to Home</button>
+  </div>
+</div>
+
+<div class="modal" id="loginModal" role="dialog" aria-modal="true">
+  <button class="modal-close" id="loginModalClose" aria-label="Close" type="button">&#x2715;</button>
+  <div class="modal-logo">Smartpay</div>
+  <h2 class="modal-title">Welcome back</h2>
+  <p class="modal-sub">Log in to your Smartpay account</p>
+  <div class="modal-form">
+    <div class="form-group">
+      <label for="loginEmail">Email Address</label>
+      <input type="email" id="loginEmail" placeholder="john@example.com" autocomplete="email">
+      <span class="field-error" id="loginEmailErr"></span>
+    </div>
+    <div class="form-group">
+      <label for="loginPassword">Password</label>
+      <div class="input-wrap">
+        <input type="password" id="loginPassword" placeholder="Your password" autocomplete="current-password">
+        <button class="toggle-pw" data-target="loginPassword" aria-label="Toggle password" type="button">&#x1F441;</button>
+      </div>
+      <span class="field-error" id="loginPasswordErr"></span>
+    </div>
+    <div class="form-row-space">
+      <div class="form-check">
+        <input type="checkbox" id="rememberMe">
+        <label for="rememberMe">Remember me</label>
+      </div>
+      <button class="link-btn" id="forgotPw" type="button">Forgot password?</button>
+    </div>
+    <button class="btn-main btn-full" id="loginBtn" type="button">Log In</button>
+    <p class="modal-switch">Don't have an account? <button class="link-btn" id="goRegister" type="button">Sign Up Free</button></p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="videoOverlay"></div>
+<div class="video-modal" id="videoModal">
+  <button class="video-modal-close" id="videoClose" type="button">&#x2715;</button>
+  <div class="video-frame-wrap">
+    <iframe id="videoIframe" src="" title="Smartpay Product Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <div class="video-info-left">
+      <div class="video-title">Smartpay — How It Works</div>
+      <div class="video-meta">Official Product Demo · 3 min HD</div>
+    </div>
+    <a href="https://youtu.be/SZEflIVnhH8" target="_blank" rel="noopener noreferrer" class="video-yt-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+      Watch on YouTube
+    </a>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="index.js"></script>
+</body>
+</html>
